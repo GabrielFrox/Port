@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(19, 151, 19);
+}
+
+/* Top */
+
+#top {
+  /* background-color: ; */
+  border: 1px solid magenta;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+#logo {
+  width: 90px;
+}
+
+#topics {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+/*  */
+
+/* Main */
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro {
+  border: 1px solid purple;
+  width: 80vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#quick-about {
+  width: 45vw;
+  text-align: start;
+  border: 1px solid blue;
+}
+
+
+
