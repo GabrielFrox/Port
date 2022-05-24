@@ -1,18 +1,23 @@
 import React from "react";
+import dogo from '../images/code-dog.gif'
 
 function MainContainer() {
   return (
     <div id="main-content">
+      <div id='intro-container'>
       <div id="intro">
         <h3>Olá, meu nome é</h3>
-        <h1>Gabriel Oliveira dos Santos</h1>
-        <h1>Sou programador web fullstack</h1>
+        <h1>Gabriel Oliveira dos Santos.</h1>
+        <h1>Sou desenvolvedor web Front-End.</h1>
         <section id="quick-about">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat nam consequatur officiis rem laudantium explicabo quis repudiandae esse aperiam pariatur voluptates at tenetur maxime atque, sunt laborum optio aliquam.</p>
+          <p>
+            Trilhando o caminho para o Full-Stack!
+            <br/>
+            Sempre disponível para novos projetos com ideias interessantes.
+          </p>
         </section>
       </div>
-      <div id="about">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, laborum cum. Deserunt neque sed corrupti aspernatur repellendus itaque, quis quod dignissimos nemo. Expedita hic alias voluptatibus suscipit consequatur nesciunt dicta?</p>
+      <img src={ dogo } alt="coding dog" id='intro-img' />
       </div>
     </div>
   );

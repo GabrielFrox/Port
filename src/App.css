@@ -1,30 +1,40 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand:wght@300&display=swap');
+
+/*  */
+
 .App {
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(19, 151, 19);
+  /* background-image: url('./images/sky.png'); */
+  background-color: rgb(18, 70, 72);
+  background-repeat: cover;
+  background-position: center;
+  color: white;
 }
 
 /* Top */
 
 #top {
-  /* background-color: ; */
   border: 1px solid magenta;
-  width: 100%;
+  width: 100vw;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* flex-direction: column; */
 }
 
 #logo {
-  width: 90px;
+  width: auto;
 }
 
 #topics {
   width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border: 1px solid red;
 }
 
@@ -33,24 +43,61 @@
 /* Main */
 
 #main-content {
+  margin-top: 10vh;
   display: flex;
-  flex-direction: column;
+  border: 1px solid orange;
+  flex-direction: row;
+  height: auto;
   align-items: center;
+  justify-content: center;
 }
 
 #intro {
   border: 1px solid purple;
-  width: 80vw;
+  animation-name: test-animation;
+  animation-duration: 2s;
+  line-height: 5vh;
+  width: 50vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#intro-img {
+  height: auto;
+  /* Opacidade apenas em um dos lados da imagem */
+  mask-image: linear-gradient(to right, transparent 2%, black);
+}
+
+#intro-container {
+  display: flex;
+  height: 40vh;
 }
 
 #quick-about {
   width: 45vw;
   text-align: start;
   border: 1px solid blue;
+  line-height: normal;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes test-animation {
+  from {
+    background-color: red;
+  } to {
+    background-color: aqua;
+  }
 }
 
 
 
+/*  */
+
+/* Footer */
+
+footer {
+  /* background-color: black; */
+  border: 1px dotted orange;
+}
