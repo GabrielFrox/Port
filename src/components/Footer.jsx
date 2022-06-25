@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       {/* Referência futura */}
       {/* <a href="https://google.com" target="_blank" rel='noreferrer'>
-        <h3>teste</h3>
+        <ha3>teste</h3>
       </a> */}
     </footer>
   );
