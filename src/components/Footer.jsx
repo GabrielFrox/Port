@@ -3,8 +3,10 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <h2>Footer Here</h2>
-      <div id="animation"></div>
+      {/* Referência futura */}
+      {/* <a href="https://google.com" target="_blank" rel='noreferrer'>
+        <h3>teste</h3>
+      </a> */}
     </footer>
   );
 }
