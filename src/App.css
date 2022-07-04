@@ -76,7 +76,7 @@ h1:after {
 }
 
 #main-content {
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   border: 1px solid orange;
   flex-direction: column;
@@ -143,13 +143,13 @@ h1 {
   font-family: 'Quicksand', sans-serif;
 }
 
-@keyframes test-animation {
+/* @keyframes test-animation {
   from {
     background-color: red;
   } to {
     background-color: aqua;
   }
-}
+} */
 
 
 
@@ -158,9 +158,9 @@ h1 {
 /* Footer */
 
 footer {
-  /* background-color: black; */
+  background-color: #212121;
   border: 1px dotted orange;
-  position: fixed;
-  width: 100vw;
-  bottom: 0;
+  /* position: fixed; */
+  /* width: 100vw; */
+  /* bottom: 0; */
 }
