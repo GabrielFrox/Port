@@ -1,5 +1,5 @@
 /* Imports */
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
@@ -22,7 +22,13 @@
 /* Top */
 
 #top {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
+  /* From https://css.glass */
+  background: rgba(33, 33, 33, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
   width: 100vw;
   height: 8vh;
   display: flex;
@@ -38,21 +44,54 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /*  */
 
 /* Main */
 
+#about {
+  margin: 10vh 0;
+  /* border: 1px solid plum; */
+}
+
+#about p {
+  line-height: 150%;
+}
+
+/* Os três elementos abaixo se tratam das linhas ao lado do subtítulo */
+
+h2::before, h2::after {
+  background-color: rgb(61, 57, 57);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+h2:before {
+  right: 0.5em;
+  /* margin-left: -50%; */
+}
+
+h1:after {
+  left: 0.5em;
+  /* margin-right: -50%; */
+}
+
 #main-content {
-  margin-top: 10vh;
+  
+  margin-top: 5vh;
   display: flex;
-  border: 1px solid orange;
-  flex-direction: row;
+  /* border: 1px solid orange; */
+  flex-direction: column;
   height: auto;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  /* margin-left: 10vw; */
 }
 
 span {
@@ -65,29 +104,38 @@ span:first-child {
 }
 
 #intro {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   /* animation-name: test-animation; */
   /* animation-duration: 2s; */
-  line-height: 5vh;
+  /* line-height: ; */
   width: 45vw;
+  height: auto;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
   /* font-family: 'Cormorant Garamond', serif; */
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#intro-header {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  /* border: 1px solid white; */
 }
 
 h1 {
   font-size: 280%;
-  
+  align-self: flex-start;
 }
 
 #intro-img {
   height: auto;
   border-radius: 10px;
   /* Opacidade apenas em um dos lados da imagem */
-  mask-image: linear-gradient(to right, transparent 2%, black);
+  mask-image: linear-gradient(to right, transparent 5%, black);
 }
 
 #intro-container {
@@ -98,7 +146,7 @@ h1 {
 #quick-about {
   width: 80%;
   text-align: start;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   line-height: normal;
   font-family: 'Quicksand', sans-serif;
 }
@@ -118,10 +166,15 @@ h1 {
 /* Footer */
 
 footer {
-  /* background-color: black; */
+  /* From https://css.glass */
+  background: rgba(33, 33, 33, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  background-color: #212121;
   /* border: 1px dotted orange; */
-  position: fixed;
-  width: 100vw;
-  bottom: 0;
-  /* display: flex; */
+  /* position: fixed; */
+  /* width: 100vw; */
+  /* bottom: 0; */
 }
